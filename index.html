@@ -340,6 +340,839 @@
                 explanation: "Le **chiffrement** est le processus de conversion des données d'un format lisible (le texte en clair) en un format illisible (le texte chiffré) à l'aide d'une clé secrète. Seules les personnes qui possèdent la clé de déchiffrement peuvent accéder aux informations originales. Le chiffrement est la pierre angulaire de la confidentialité des données, que ce soit pour des fichiers stockés sur un disque dur ou des données transmises sur Internet. ",
                 image: "https://placehold.co/600x400/5B21B6/FFFFFF?text=Chiffrement"
             },
+             {
+        french: "Modèle OSI",
+        arabic: "نموذج OSI",
+        category: "Réseaux",
+        explanation: "Le **modèle OSI (Open Systems Interconnection)** est un modèle conceptuel qui divise les fonctions de communication d'un réseau en sept couches. Chaque couche a un rôle spécifique, de la transmission physique des bits (couche 1) à la communication avec les applications (couche 7). Ce modèle est essentiel pour comprendre le fonctionnement des réseaux et pour diagnostiquer les problèmes de connectivité en identifiant à quelle couche le problème se situe. C'est la base de toute formation en réseautique.",
+        image: "https://placehold.co/600x400/1E3A8A/FFFFFF?text=Modèle+OSI"
+    },
+    {
+        french: "Couche Physique (Couche 1)",
+        arabic: "الطبقة الفيزيائية",
+        category: "Réseaux",
+        explanation: "La **couche physique** est la première couche du modèle OSI. Elle est responsable de la transmission des données brutes (bits) sur le support de communication (câble, fibre optique, ondes radio). Les équipements de cette couche sont les câbles Ethernet, les connecteurs RJ45, les hubs et les cartes réseau. C'est le niveau le plus basique du réseau, où les signaux électriques ou lumineux sont gérés.",
+        image: "https://placehold.co/600x400/93C5FD/1E3A8A?text=Couche+1"
+    },
+    {
+        french: "Couche Liaison de Données (Couche 2)",
+        arabic: "طبقة ربط البيانات",
+        category: "Réseaux",
+        explanation: "La **couche liaison de données** gère la communication entre deux appareils directement connectés. Elle utilise l'adresse MAC pour identifier les appareils et organise les données en trames. Les équipements clés de cette couche sont les **switches**, qui acheminent les trames vers le bon destinataire au sein du réseau local. C'est le niveau où le sous-réseautage et les VLANs opèrent.",
+        image: "https://placehold.co/600x400/38BDF8/FFFFFF?text=Couche+2"
+    },
+    {
+        french: "Couche Réseau (Couche 3)",
+        arabic: "طبقة الشبكة",
+        category: "Réseaux",
+        explanation: "La **couche réseau** est responsable du routage des paquets de données entre des réseaux différents. Elle utilise les adresses IP pour identifier les réseaux et les hôtes. Le principal équipement de cette couche est le **routeur**, qui prend des décisions de routage pour envoyer les paquets sur le meilleur chemin possible vers leur destination finale sur un autre réseau. Les protocoles comme IP (Internet Protocol) et ICMP (Ping) opèrent à ce niveau.",
+        image: "https://placehold.co/600x400/0E7490/FFFFFF?text=Couche+3"
+    },
+    {
+        french: "Couche Transport (Couche 4)",
+        arabic: "طبقة النقل",
+        category: "Réseaux",
+        explanation: "La **couche transport** gère la communication de bout en bout entre les applications. Elle s'assure que les données arrivent de manière fiable et dans le bon ordre. Les deux principaux protocoles de cette couche sont le **TCP (Transmission Control Protocol)**, qui est fiable (avec accusé de réception), et le **UDP (User Datagram Protocol)**, qui est plus rapide mais non fiable. C'est à ce niveau que les ports de communication sont utilisés.",
+        image: "https://placehold.co/600x400/3B82F6/FFFFFF?text=Couche+4"
+    },
+    {
+        french: "Couche Session (Couche 5)",
+        arabic: "طبقة الجلسة",
+        category: "Réseaux",
+        explanation: "La **couche session** établit, gère et termine les sessions de communication entre les applications. Elle permet à deux appareils de maintenir une connexion active et d'échanger des données. C'est cette couche qui permet d'avoir une conversation continue, comme dans une session de connexion à distance ou un appel vidéo, en gérant le dialogue entre les deux points.",
+        image: "https://placehold.co/600x400/60A5FA/FFFFFF?text=Couche+5"
+    },
+    {
+        french: "Couche Présentation (Couche 6)",
+        arabic: "طبقة العرض",
+        category: "Réseaux",
+        explanation: "La **couche présentation** est responsable de la traduction, du formatage et du chiffrement des données pour qu'elles soient comprises par les applications. C'est à ce niveau que les données sont encodées ou décodées (par exemple, ASCII, EBCDIC) et que le chiffrement (comme SSL/TLS) est géré. Cette couche garantit que les données envoyées par une application sur un système peuvent être lues par une application sur un autre système.",
+        image: "https://placehold.co/600x400/93C5FD/1E3A8A?text=Couche+6"
+    },
+    {
+        french: "Couche Application (Couche 7)",
+        arabic: "طبقة التطبيق",
+        category: "Réseaux",
+        explanation: "La **couche application** est la seule couche avec laquelle l'utilisateur interagit directement. Elle fournit des services de réseau pour les applications utilisateur. Les protocoles de cette couche incluent HTTP (pour le web), FTP (pour le transfert de fichiers), SMTP (pour les e-mails) et DNS. Cette couche est l'interface finale entre le réseau et l'utilisateur.",
+        image: "https://placehold.co/600x400/06B6D4/FFFFFF?text=Couche+7"
+    },
+    {
+        french: "Topologie en étoile",
+        arabic: "هندسة الشبكة النجمية",
+        category: "Réseaux",
+        explanation: "Dans une **topologie en étoile**, tous les appareils du réseau sont connectés à un point central, généralement un **switch** ou un **hub**. C'est la topologie la plus courante dans les réseaux locaux modernes. Ses avantages incluent une installation et un diagnostic faciles, car si un câble tombe en panne, seul un seul appareil est affecté et le reste du réseau continue de fonctionner.",
+        image: "https://placehold.co/600x400/38A169/FFFFFF?text=Topologie+en+étoile"
+    },
+    {
+        french: "Topologie en bus",
+        arabic: "هندسة الشبكة الخطية",
+        category: "Réseaux",
+        explanation: "Dans une **topologie en bus**, tous les appareils sont connectés à un seul câble central (le 'bus'). C'était une topologie courante dans les premiers réseaux. Son principal inconvénient est que si le câble principal tombe en panne ou est endommagé, l'ensemble du réseau s'effondre. De plus, les collisions de données sont fréquentes sur un bus, rendant la communication inefficace.",
+        image: "https://placehold.co/600x400/68D391/1A202C?text=Topologie+en+bus"
+    },
+    {
+        french: "Topologie en anneau",
+        arabic: "هندسة الشبكة الحلقية",
+        category: "Réseaux",
+        explanation: "Dans une **topologie en anneau**, chaque appareil est connecté à deux autres, formant un cercle parfait. Les données voyagent dans une seule direction d'un appareil à l'autre. Le principal désavantage est que si un appareil ou un câble tombe en panne, il peut briser l'anneau et interrompre la communication pour l'ensemble du réseau. Elle est peu utilisée de nos jours mais reste importante pour comprendre les concepts de base.",
+        image: "https://placehold.co/600x400/38B2AC/FFFFFF?text=Topologie+en+anneau"
+    },
+    {
+        french: "Protocoles réseau",
+        arabic: "بروتوكولات الشبكة",
+        category: "Réseaux",
+        explanation: "Un **protocole réseau** est un ensemble de règles et de procédures standardisées qui permettent à deux appareils ou plus de communiquer sur un réseau. Ces protocoles définissent le format des données, la manière dont elles sont envoyées, reçues et traitées. Sans protocoles, la communication réseau serait impossible, car chaque appareil parlerait un langage différent.",
+        image: "https://placehold.co/600x400/2C3E50/FFFFFF?text=Protocoles"
+    },
+    {
+        french: "DHCP",
+        arabic: "بروتوكول التهيئة الديناميكية للمضيف",
+        category: "Réseaux",
+        explanation: "Le **DHCP (Dynamic Host Configuration Protocol)** est un protocole qui attribue automatiquement une adresse IP, un masque de sous-réseau et d'autres paramètres réseau aux appareils qui se connectent à un réseau. Cela évite aux administrateurs de configurer manuellement l'adresse IP de chaque appareil, ce qui simplifie grandement la gestion du réseau. Le serveur DHCP gère un pool d'adresses disponibles.",
+        image: "https://placehold.co/600x400/2980B9/FFFFFF?text=DHCP"
+    },
+    {
+        french: "DNS",
+        arabic: "نظام أسماء النطاقات",
+        category: "Réseaux",
+        explanation: "Le **DNS (Domain Name System)** est un service qui traduit les noms de domaine (comme `google.com`) en adresses IP que les ordinateurs peuvent comprendre. C'est l'équivalent d'un annuaire téléphonique pour Internet. Sans DNS, vous devriez mémoriser l'adresse IP numérique de chaque site web que vous souhaitez visiter. Les serveurs DNS sont essentiels au bon fonctionnement d'Internet.",
+        image: "https://placehold.co/600x400/3498DB/FFFFFF?text=DNS"
+    },
+    {
+        french: "Passerelle (Gateway)",
+        arabic: "البوابة",
+        category: "Réseaux",
+        explanation: "Une **passerelle** est un nœud de réseau (souvent un routeur) qui sert de point d'entrée et de sortie pour le trafic vers d'autres réseaux. C'est la porte par laquelle les données d'un réseau local (LAN) doivent passer pour atteindre Internet. Les appareils de votre réseau local sont configurés pour envoyer tout trafic destiné à l'extérieur vers l'adresse IP de la passerelle.",
+        image: "https://placehold.co/600x400/22A6B3/FFFFFF?text=Gateway"
+    },
+    {
+        french: "Sous-réseau (subnet)",
+        arabic: "الشبكة الفرعية",
+        category: "Réseaux",
+        explanation: "Un **sous-réseau** est une division logique d'un réseau IP en segments plus petits. Cela permet de mieux organiser les adresses IP, de réduire le trafic de diffusion (broadcast) et d'améliorer la sécurité en isolant les différents groupes d'appareils. Chaque sous-réseau possède une adresse réseau et une adresse de diffusion qui lui sont propres. Les administrateurs réseau utilisent la **notation CIDR** pour définir la taille des sous-réseaux.",
+        image: "https://placehold.co/600x400/778CA3/FFFFFF?text=Subnetting"
+    },
+    {
+        french: "Câble à paire torsadée",
+        arabic: "كابل زوج مجدول",
+        category: "Réseaux",
+        explanation: "Le **câble à paire torsadée** est le type de câble le plus courant pour les réseaux locaux. Il est composé de paires de fils de cuivre qui sont torsadées ensemble pour réduire les interférences électromagnétiques. Il en existe plusieurs catégories, comme le **Cat 5e**, le **Cat 6** et le **Cat 7**, qui offrent des débits de données de plus en plus élevés (de 100 Mbps à 10 Gbps ou plus).",
+        image: "https://placehold.co/600x400/C8D6E5/1A202C?text=Paire+torsadée"
+    },
+    {
+        french: "Fibre optique",
+        arabic: "الألياف البصرية",
+        category: "Réseaux",
+        explanation: "La **fibre optique** est une technologie de transmission de données qui utilise la lumière pour transporter les informations à travers des fils de verre ou de plastique. Elle est beaucoup plus rapide et capable de couvrir de plus longues distances que les câbles en cuivre. La fibre optique est utilisée pour les dorsales de réseaux (backbones), les liaisons entre les villes et pour les connexions Internet à très haut débit.",
+        image: "https://placehold.co/600x400/7F8C8D/FFFFFF?text=Fibre+Optique"
+    },
+    {
+        french: "Commutateur non géré",
+        arabic: "المبدل غير المدار",
+        category: "Réseaux",
+        explanation: "Un **commutateur non géré** (unmanaged switch) est un switch de base qui fonctionne en plug-and-play. Il n'a pas d'interface de configuration ni de fonctionnalités avancées. Il est simple et efficace pour étendre un réseau sans nécessiter de compétences techniques, mais il n'offre aucun contrôle sur le trafic.",
+        image: "https://placehold.co/600x400/BDC3C7/2C3E50?text=Switch+non+géré"
+    },
+    {
+        french: "Commutateur géré",
+        arabic: "المبدل المدار",
+        category: "Réseaux",
+        explanation: "Un **commutateur géré** (managed switch) offre des fonctionnalités de configuration avancées via une interface web, une ligne de commande ou une application. Il permet aux administrateurs de contrôler le trafic, de mettre en place des VLANs, de surveiller le réseau et d'appliquer des politiques de sécurité. C'est l'équipement de choix pour les réseaux d'entreprise qui exigent un contrôle précis.",
+        image: "https://placehold.co/600x400/34495E/FFFFFF?text=Switch+géré"
+    },
+    {
+        french: "Serveur DNS",
+        arabic: "خادم DNS",
+        category: "Réseaux",
+        explanation: "Un **serveur DNS** est un serveur qui stocke une base de données de noms de domaine et de leurs adresses IP correspondantes. Lorsque vous tapez une adresse web, votre ordinateur interroge le serveur DNS pour obtenir l'adresse IP associée afin de pouvoir se connecter au site. C'est un service essentiel pour la navigation sur le web et pour la résolution des noms de réseau locaux.",
+        image: "https://placehold.co/600x400/2ECC71/FFFFFF?text=Serveur+DNS"
+    },
+    {
+        french: "Adresse IPv6",
+        arabic: "عنوان IPv6",
+        category: "Réseaux",
+        explanation: "L'**adresse IPv6** est la nouvelle génération d'adresses IP. Contrairement à IPv4 qui est limité à environ 4 milliards d'adresses, IPv6 utilise un format de 128 bits, ce qui permet un nombre presque illimité d'adresses. Il est conçu pour faire face à la croissance exponentielle des appareils connectés et pour améliorer la sécurité et l'efficacité du routage. Les deux protocoles coexistent sur Internet.",
+        image: "https://placehold.co/600x400/16A085/FFFFFF?text=IPv6"
+    },
+    {
+        french: "Masque de sous-réseau",
+        arabic: "قناع الشبكة الفرعية",
+        category: "Réseaux",
+        explanation: "Le **masque de sous-réseau** est un nombre de 32 bits qui permet à un ordinateur de déterminer si une adresse IP se trouve sur son propre réseau local ou sur un autre réseau. Il sépare l'adresse IP en deux parties : l'ID du réseau et l'ID de l'hôte. C'est un concept fondamental du sous-réseautage.",
+        image: "https://placehold.co/600x400/F1C40F/FFFFFF?text=Masque+de+sous-réseau"
+    },
+    {
+        french: "DHCP Lease",
+        arabic: "عقد إيجار DHCP",
+        category: "Réseaux",
+        explanation: "Un **DHCP Lease** est la durée pendant laquelle un serveur DHCP alloue une adresse IP à un client. Lorsque la durée de la location approche de sa fin, le client doit demander au serveur de renouveler le bail. Si le client ne renouvelle pas, l'adresse IP redevient disponible pour être attribuée à un autre appareil.",
+        image: "https://placehold.co/600x400/E67E22/FFFFFF?text=DHCP+Lease"
+    },
+    {
+        french: "ARP (Address Resolution Protocol)",
+        arabic: "بروتوكول تحليل العنوان",
+        category: "Réseaux",
+        explanation: "L'**ARP** est un protocole qui permet à un appareil de trouver l'adresse MAC d'un autre appareil sur le même réseau local à partir de son adresse IP. C'est une étape cruciale pour l'acheminement des paquets de la couche 3 à la couche 2 du modèle OSI. Sans ARP, un routeur ne pourrait pas envoyer un paquet à l'appareil suivant sur le chemin.",
+        image: "https://placehold.co/600x400/E74C3C/FFFFFF?text=ARP"
+    },
+    {
+        french: "Service",
+        arabic: "خدمة",
+        category: "Systèmes",
+        explanation: "Un **service** est un programme qui s'exécute en arrière-plan sur un système d'exploitation sans nécessiter d'interaction de l'utilisateur. Les services sont lancés automatiquement au démarrage du système et sont essentiels pour le fonctionnement de la plupart des applications et des serveurs. Par exemple, le service d'impression ou le service web Apache sont des services.",
+        image: "https://placehold.co/600x400/8E44AD/FFFFFF?text=Service"
+    },
+    {
+        french: "Processus",
+        arabic: "عملية",
+        category: "Systèmes",
+        explanation: "Un **processus** est une instance d'un programme en cours d'exécution. Chaque fois que vous lancez une application, un processus est créé. Le système d'exploitation alloue au processus des ressources comme la mémoire, le temps CPU et les fichiers. Le gestionnaire des tâches de Windows ou la commande `top` de Linux permettent de voir tous les processus en cours.",
+        image: "https://placehold.co/600x400/9B59B6/FFFFFF?text=Processus"
+    },
+    {
+        french: "Système de fichiers",
+        arabic: "نظام الملفات",
+        category: "Systèmes",
+        explanation: "Un **système de fichiers** est la méthode et la structure que le système d'exploitation utilise pour organiser et stocker les fichiers sur un périphérique de stockage (disque dur, SSD). Il définit la manière dont les fichiers sont nommés, stockés, retrouvés et mis à jour. Les systèmes de fichiers les plus courants sont **NTFS** (pour Windows), **ext4** (pour Linux) et **FAT32** (pour les clés USB).",
+        image: "https://placehold.co/600x400/3498DB/FFFFFF?text=Système+de+fichiers"
+    },
+    {
+        french: "Utilisateurs et permissions",
+        arabic: "المستخدمون والصلاحيات",
+        category: "Systèmes",
+        explanation: "La gestion des **utilisateurs et des permissions** est un aspect fondamental de l'administration système. Les utilisateurs sont des comptes individuels qui peuvent accéder au système, tandis que les permissions définissent ce que chaque utilisateur a le droit de faire (lire, écrire, exécuter des fichiers). Les permissions sont généralement gérées au niveau des fichiers et des répertoires pour garantir la sécurité et l'intégrité du système.",
+        image: "https://placehold.co/600x400/2ECC71/FFFFFF?text=Permissions"
+    },
+    {
+        french: "Ligne de commande (CLI)",
+        arabic: "واجهة سطر الأوامر",
+        category: "Systèmes",
+        explanation: "La **ligne de commande** est une interface utilisateur basée sur du texte, où l'utilisateur saisit des commandes pour interagir avec le système d'exploitation. Contrairement à une interface graphique (GUI), la CLI est plus rapide, plus puissante et essentielle pour l'automatisation des tâches et l'administration des serveurs à distance. Des outils comme Bash (Linux) et PowerShell (Windows) en sont des exemples.",
+        image: "https://placehold.co/600x400/1ABC9C/FFFFFF?text=CLI"
+    },
+    {
+        french: "Bash",
+        arabic: "باش",
+        category: "Systèmes",
+        explanation: "Le **Bash** (Bourne Again SHell) est l'interpréteur de commandes le plus répandu dans les systèmes d'exploitation Linux et UNIX. Il permet d'exécuter des commandes et des scripts. L'apprentissage de Bash est indispensable pour tout administrateur de serveurs Linux.",
+        image: "https://placehold.co/600x400/16A085/FFFFFF?text=Bash"
+    },
+    {
+        french: "PowerShell",
+        arabic: "باور شيل",
+        category: "Systèmes",
+        explanation: "Le **PowerShell** est l'outil de ligne de commande et de scripting de Microsoft. Conçu pour l'administration système, il est plus puissant que l'ancienne invite de commande de Windows car il est basé sur des objets, ce qui permet une gestion plus sophistiquée des serveurs et des réseaux Microsoft.",
+        image: "https://placehold.co/600x400/2C8B57/FFFFFF?text=PowerShell"
+    },
+    {
+        french: "Clé de registre",
+        arabic: "مفتاح التسجيل",
+        category: "Systèmes",
+        explanation: "Dans les systèmes Windows, la **clé de registre** est un élément de la base de données hiérarchique qui stocke les paramètres et les options de configuration du système d'exploitation et des applications. Modifier le registre est une opération délicate qui peut affecter la stabilité du système et qui est généralement réservée aux techniciens expérimentés.",
+        image: "https://placehold.co/600x400/3498DB/FFFFFF?text=Registre"
+    },
+    {
+        french: "Service Pack",
+        arabic: "حزمة الخدمة",
+        category: "Systèmes",
+        explanation: "Un **Service Pack** est un ensemble de mises à jour, de correctifs et d'améliorations pour un système d'exploitation ou un logiciel, livré en un seul paquet installable. Les Service Packs étaient couramment utilisés par Microsoft pour regrouper les mises à jour majeures, ce qui simplifiait la maintenance des systèmes.",
+        image: "https://placehold.co/600x400/5DADE2/FFFFFF?text=Service+Pack"
+    },
+    {
+        french: "Processus zombie",
+        arabic: "العملية الزومبي",
+        category: "Systèmes",
+        explanation: "Un **processus zombie** est un processus qui a terminé son exécution mais dont l'entrée dans la table des processus n'a pas encore été libérée. Il n'utilise plus de ressources système mais ne peut pas être tué (terminé) par les moyens habituels. Un grand nombre de processus zombies peut indiquer un problème avec le système ou une application.",
+        image: "https://placehold.co/600x400/77AADD/FFFFFF?text=Zombie+Process"
+    },
+    {
+        french: "SATA",
+        arabic: "ساتا",
+        category: "Matériel",
+        explanation: "Le **SATA (Serial Advanced Technology Attachment)** est une interface standard pour connecter des périphériques de stockage (disques durs, SSD, lecteurs optiques) à la carte mère de l'ordinateur. C'est l'interface la plus courante pour les disques durs. La vitesse de l'interface SATA est inférieure à celle du M.2 et du NVMe.",
+        image: "https://placehold.co/600x400/F1C40F/FFFFFF?text=SATA"
+    },
+    {
+        french: "PCIe",
+        arabic: "بي سي آي إي",
+        category: "Matériel",
+        explanation: "Le **PCIe (Peripheral Component Interconnect Express)** est un bus d'extension haute vitesse sur la carte mère qui permet de connecter des cartes d'extension, comme les cartes graphiques, les cartes réseau haut de gamme et les SSD NVMe. Les slots PCIe sont essentiels pour ajouter des fonctionnalités et des performances à un système.",
+        image: "https://placehold.co/600x400/E67E22/FFFFFF?text=PCIe"
+    },
+    {
+        french: "Boîtier d'alimentation (PSU)",
+        arabic: "وحدة إمداد الطاقة",
+        category: "Matériel",
+        explanation: "Le **bloc d'alimentation (PSU)** est un composant crucial qui convertit le courant électrique alternatif du mur en courant continu utilisable par tous les composants de l'ordinateur. Le choix d'une alimentation de qualité est primordial pour la stabilité et la longévité de l'ensemble du système. Sa puissance est mesurée en watts.",
+        image: "https://placehold.co/600x400/F39C12/FFFFFF?text=PSU"
+    },
+    {
+        french: "Refroidissement actif",
+        arabic: "التبريد النشط",
+        category: "Matériel",
+        explanation: "Le **refroidissement actif** utilise des composants mécaniques comme des ventilateurs ou des pompes pour dissiper la chaleur des composants. C'est la méthode de refroidissement la plus courante et la plus efficace pour les processeurs et les cartes graphiques, garantissant que les composants restent à une température optimale pour des performances maximales.",
+        image: "https://placehold.co/600x400/2ECC71/FFFFFF?text=Refroidissement+actif"
+    },
+    {
+        french: "Refroidissement passif",
+        arabic: "التبريد السلبي",
+        category: "Matériel",
+        explanation: "Le **refroidissement passif** n'utilise aucune pièce mobile. Il repose uniquement sur des dissipateurs thermiques (souvent en aluminium ou en cuivre) et sur la convection naturelle pour dissiper la chaleur. Il est silencieux et fiable, mais moins efficace que le refroidissement actif, et est généralement utilisé pour les composants qui ne chauffent pas beaucoup.",
+        image: "https://placehold.co/600x400/27AE60/FFFFFF?text=Refroidissement+passif"
+    },
+    {
+        french: "Facteur de forme",
+        arabic: "عامل الشكل",
+        category: "Matériel",
+        explanation: "Le **facteur de forme** fait référence à la taille, à la forme et aux spécifications physiques des composants matériels. Par exemple, les cartes mères et les boîtiers existent en différents facteurs de forme (ATX, Micro-ATX, Mini-ITX) qui doivent être compatibles entre eux pour que les composants puissent être montés correctement.",
+        image: "https://placehold.co/600x400/2980B9/FFFFFF?text=Facteur+de+forme"
+    },
+    {
+        french: "Redondance",
+        arabic: "التكرار",
+        category: "Sécurité Générale",
+        explanation: "La **redondance** est la duplication de composants matériels ou de services pour garantir qu'un système reste opérationnel en cas de panne d'un de ses éléments. Par exemple, l'utilisation de deux blocs d'alimentation au lieu d'un seul est une forme de redondance. La redondance est une stratégie clé pour garantir la **disponibilité** des services.",
+        image: "https://placehold.co/600x400/E74C3C/FFFFFF?text=Redondance"
+    },
+    {
+        french: "Sauvegarde incrémentielle",
+        arabic: "النسخ الاحتياطي التزايدي",
+        category: "Sécurité Générale",
+        explanation: "La **sauvegarde incrémentielle** ne copie que les fichiers qui ont été modifiés depuis la **dernière sauvegarde, qu'elle soit complète ou incrémentielle**. Cette méthode est la plus rapide pour sauvegarder car elle ne copie que les changements les plus récents, mais la restauration des données est plus complexe car elle nécessite la dernière sauvegarde complète plus toutes les sauvegardes incrémentielles qui ont suivi.",
+        image: "https://placehold.co/600x400/F1C40F/FFFFFF?text=Sauvegarde+incrémentielle"
+    },
+    {
+        french: "Chiffrement (Cryptage)",
+        arabic: "التشفير",
+        category: "Sécurité Générale",
+        explanation: "Le **chiffrement** est le processus de conversion de données en un format illisible (chiffré) pour garantir leur confidentialité. Seules les personnes possédant la clé de déchiffrement peuvent accéder aux informations. Le chiffrement est utilisé pour protéger les données en transit (par exemple, les connexions web sécurisées) et les données au repos (par exemple, les disques durs chiffrés).",
+        image: "https://placehold.co/600x400/8E44AD/FFFFFF?text=Chiffrement"
+    },
+    {
+        french: "Firewall (Pare-feu)",
+        arabic: "الجدار الناري",
+        category: "Sécurité Générale",
+        explanation: "Un **pare-feu** est un système de sécurité qui surveille et filtre le trafic réseau entrant et sortant. Il agit comme une barrière entre votre réseau et l'Internet pour bloquer le trafic malveillant ou non autorisé. Les règles du pare-feu déterminent quel type de trafic est autorisé et quel type est bloqué, en se basant sur les adresses IP, les ports et les protocoles.",
+        image: "https://placehold.co/600x400/C0392B/FFFFFF?text=Pare-feu"
+    },
+    {
+        french: "Virus",
+        arabic: "فيروس",
+        category: "Sécurité Générale",
+        explanation: "Un **virus** est un type de malware qui s'attache à un programme légitime. Lorsqu'un utilisateur exécute ce programme, le virus s'exécute également et se propage en s'attachant à d'autres programmes. Il a besoin d'un hôte pour se propager et peut causer des dommages en corrompant ou en effaçant des fichiers.",
+        image: "https://placehold.co/600x400/95A5A6/FFFFFF?text=Virus"
+    },
+    {
+        french: "Cheval de Troie",
+        arabic: "حصان طروادة",
+        category: "Sécurité Générale",
+        explanation: "Un **cheval de Troie** est un malware qui se déguise en un logiciel inoffensif et légitime pour inciter l'utilisateur à l'exécuter. Une fois installé, il peut donner un accès à distance à l'attaquant, voler des informations, ou télécharger d'autres malwares sans que l'utilisateur s'en rende compte. Contrairement aux virus, il ne se réplique pas.",
+        image: "https://placehold.co/600x400/D35400/FFFFFF?text=Cheval+de+Troie"
+    },
+    {
+        french: "Rootkit",
+        arabic: "روت كيت",
+        category: "Sécurité Générale",
+        explanation: "Un **rootkit** est un ensemble d'outils logiciels conçus pour cacher l'existence de logiciels malveillants ou de l'activité d'un attaquant sur un système. Il peut modifier les composants clés du système d'exploitation pour se rendre indétectable par les logiciels de sécurité. Les rootkits sont très difficiles à détecter et à supprimer.",
+        image: "https://placehold.co/600x400/5D6D7E/FFFFFF?text=Rootkit"
+    },
+    {
+        french: "Ransomware",
+        arabic: "برامج الفدية",
+        category: "Sécurité Générale",
+        explanation: "Le **ransomware** est un type de malware qui chiffre les fichiers de la victime et exige une rançon pour les déchiffrer. C'est une menace très grave qui peut paralyser une entreprise ou un individu. La meilleure défense contre les ransomwares est d'avoir des sauvegardes régulières et à jour de toutes vos données.",
+        image: "https://placehold.co/600x400/CB4335/FFFFFF?text=Ransomware"
+    },
+    {
+        french: "Patch management",
+        arabic: "إدارة التصحيحات",
+        category: "Sécurité Générale",
+        explanation: "Le **patch management** est le processus d'application de correctifs (patches) aux logiciels et aux systèmes d'exploitation pour corriger des vulnérabilités connues. C'est une tâche essentielle pour les administrateurs de systèmes, car les vulnérabilités non corrigées sont une porte d'entrée facile pour les attaquants. Les correctifs de sécurité doivent être appliqués régulièrement et rapidement.",
+        image: "https://placehold.co/600x400/A569BD/FFFFFF?text=Patch+Management"
+    },
+    {
+        french: "Antivirus",
+        arabic: "برنامج مضاد للفيروسات",
+        category: "Sécurité Générale",
+        explanation: "Un **antivirus** est un logiciel conçu pour détecter, prévenir et supprimer les logiciels malveillants, y compris les virus, les chevaux de Troie et les vers. Un bon antivirus utilise une base de données de signatures connues et une analyse comportementale pour identifier les menaces. Il doit être mis à jour régulièrement pour être efficace contre les nouvelles menaces.",
+        image: "https://placehold.co/600x400/F4D03F/1A202C?text=Antivirus"
+    },
+    {
+        french: "Authentification à deux facteurs (2FA)",
+        arabic: "المصادقة الثنائية",
+        category: "Sécurité Générale",
+        explanation: "L'**authentification à deux facteurs (2FA)** est un mécanisme de sécurité qui exige deux formes de vérification différentes pour accéder à un compte. Par exemple, un mot de passe (ce que vous savez) et un code envoyé à votre téléphone (ce que vous avez). Le 2FA est une couche de sécurité supplémentaire très efficace pour empêcher l'accès non autorisé, même si le mot de passe est compromis.",
+        image: "https://placehold.co/600x400/E59866/FFFFFF?text=2FA"
+    },
+    {
+        french: "Politique de mot de passe",
+        arabic: "سياسة كلمة المرور",
+        category: "Sécurité Générale",
+        explanation: "Une **politique de mot de passe** est un ensemble de règles qu'une organisation impose pour la création et la gestion des mots de passe. Ces règles peuvent inclure la longueur minimale, la complexité (majuscules, minuscules, chiffres, symboles), l'obligation de les changer régulièrement et l'interdiction de réutiliser les anciens mots de passe. Une politique de mot de passe forte est la première ligne de défense contre l'accès non autorisé.",
+        image: "https://placehold.co/600x400/85C1E9/1A202C?text=Politique+de+mot+de+passe"
+    },
+    {
+        french: "VPN",
+        arabic: "شبكة خاصة افتراضية",
+        category: "Sécurité Générale",
+        explanation: "Un **VPN (Virtual Private Network)** crée une connexion sécurisée et chiffrée entre un appareil et un réseau privé sur Internet. Le VPN masque l'adresse IP de l'utilisateur et chiffre le trafic, ce qui protège la confidentialité des données et permet d'accéder à des ressources comme si l'utilisateur se trouvait sur le réseau privé. Il est utilisé pour le télétravail ou pour naviguer sur des réseaux publics en toute sécurité.",
+        image: "https://placehold.co/600x400/AF7AC5/FFFFFF?text=VPN"
+    },
+    {
+        french: "Proxy",
+        arabic: "وكيل",
+        category: "Sécurité Générale",
+        explanation: "Un **serveur proxy** est un serveur qui agit comme un intermédiaire entre un client et un autre serveur. Au lieu de se connecter directement à un site web, le client envoie sa requête au proxy, qui la transmet au site web. Le proxy peut être utilisé pour améliorer la performance (en mettant en cache les pages), pour filtrer le contenu ou pour masquer l'identité du client. Il est un élément important de la sécurité réseau.",
+        image: "https://placehold.co/600x400/A9CCE3/1A202C?text=Proxy"
+    },
+    {
+        french: "IDS / IPS",
+        arabic: "نظام كشف / منع التسلل",
+        category: "Sécurité Générale",
+        explanation: "Un **IDS (Intrusion Detection System)** est un système qui surveille le réseau et les systèmes pour détecter les activités suspectes ou malveillantes. Un **IPS (Intrusion Prevention System)** est un système similaire, mais qui a en plus la capacité de bloquer activement le trafic malveillant. Les deux sont des outils essentiels pour la sécurité réseau, souvent utilisés en complément d'un pare-feu.",
+        image: "https://placehold.co/600x400/2C3E50/FFFFFF?text=IDS+IPS"
+    },
+    {
+        french: "Sauvegarde miroir",
+        arabic: "النسخ الاحتياطي المرآة",
+        category: "Sécurité Générale",
+        explanation: "La **sauvegarde miroir** est une copie exacte d'un jeu de données source. Elle est plus rapide à restaurer que les autres types de sauvegardes car elle n'est pas compressée et les fichiers sont organisés de la même manière que sur la source. Cependant, elle peut être moins efficace en termes de stockage car elle copie tous les fichiers, y compris ceux qui n'ont pas changé.",
+        image: "https://placehold.co/600x400/7D3C98/FFFFFF?text=Sauvegarde+miroir"
+    },
+    {
+        french: "Audits de sécurité",
+        arabic: "تدقيق الأمان",
+        category: "Sécurité Générale",
+        explanation: "Un **audit de sécurité** est une évaluation systématique et indépendante de l'efficacité des mesures de sécurité d'un système. Il vise à identifier les faiblesses, les vulnérabilités et les non-conformités par rapport aux politiques et aux réglementations de sécurité. Les audits sont essentiels pour maintenir un haut niveau de sécurité et pour se conformer aux normes de l'industrie.",
+        image: "https://placehold.co/600x400/B03A2E/FFFFFF?text=Audits+de+sécurité"
+    },
+    {
+        french: "Ingénierie sociale",
+        arabic: "الهندسة الاجتماعية",
+        category: "Sécurité Générale",
+        explanation: "L'**ingénierie sociale** est la manipulation psychologique d'un individu pour l'amener à divulguer des informations confidentielles. Les attaquants utilisent la tromperie pour gagner la confiance de la victime. Le phishing en est un exemple courant. La formation des utilisateurs est la meilleure défense contre ce type d'attaque.",
+        image: "https://placehold.co/600x400/5499C7/FFFFFF?text=Ingénierie+sociale"
+    },
+    {
+        french: "Disque SSD",
+        arabic: "قرص الحالة الصلبة",
+        category: "Matériel",
+        explanation: "Le **SSD (Solid-State Drive)** est un type de périphérique de stockage qui utilise de la mémoire flash pour stocker les données. Il n'a pas de pièces mobiles, ce qui le rend beaucoup plus rapide, plus résistant aux chocs et plus silencieux que les disques durs (HDD). Les SSD sont de plus en plus utilisés comme disque principal pour les systèmes d'exploitation et les applications.",
+        image: "https://placehold.co/600x400/2C3E50/FFFFFF?text=SSD"
+    },
+    {
+        french: "Disque dur (HDD)",
+        arabic: "القرص الصلب",
+        category: "Matériel",
+        explanation: "Le **HDD (Hard Disk Drive)** est un périphérique de stockage traditionnel qui utilise des plateaux magnétiques rotatifs pour stocker les données. Bien qu'ils soient plus lents que les SSD, les HDD sont beaucoup moins chers par gigaoctet, ce qui en fait une solution de stockage économique pour les grandes quantités de données et les sauvegardes.",
+        image: "https://placehold.co/600x400/9B59B6/FFFFFF?text=HDD"
+    },
+    {
+        french: "Carte réseau",
+        arabic: "بطاقة الشبكة",
+        category: "Matériel",
+        explanation: "La **carte réseau** est un composant matériel qui permet à un ordinateur de se connecter à un réseau. Elle est le lien physique entre l'ordinateur et le câble réseau. Chaque carte réseau possède une adresse MAC unique qui l'identifie sur le réseau local.",
+        image: "https://placehold.co/600x400/2980B9/FFFFFF?text=Carte+réseau"
+    },
+    {
+        french: "Mémoire flash",
+        arabic: "ذاكرة الفلاش",
+        category: "Matériel",
+        explanation: "La **mémoire flash** est un type de mémoire non volatile qui peut être effacée et reprogrammée électroniquement. Elle est utilisée dans les SSD, les clés USB et les cartes mémoire. Sa rapidité et sa résistance en font une technologie de stockage très répandue.",
+        image: "https://placehold.co/600x400/85C1E9/1A202C?text=Mémoire+flash"
+    },
+    {
+        french: "Port USB",
+        arabic: "منفذ USB",
+        category: "Matériel",
+        explanation: "Le **port USB (Universal Serial Bus)** est une interface standard pour connecter des périphériques externes (clés USB, souris, clavier, imprimantes) à un ordinateur. Il permet le transfert de données et l'alimentation électrique, ce qui en fait un port polyvalent essentiel.",
+        image: "https://placehold.co/600x400/F1C40F/FFFFFF?text=USB"
+    },
+    {
+        french: "Interface",
+        arabic: "واجهة",
+        category: "Général",
+        explanation: "Une **interface** est un point de connexion entre deux systèmes ou composants qui leur permet de communiquer. Elle peut être une interface graphique (GUI) pour l'utilisateur, une interface matérielle (comme le port USB), ou une interface logicielle (comme une API) qui permet à deux programmes de dialoguer.",
+        image: "https://placehold.co/600x400/F39C12/FFFFFF?text=Interface"
+    },
+    {
+        french: "Configuration",
+        arabic: "تهيئة",
+        category: "Général",
+        explanation: "La **configuration** est l'ensemble des paramètres, des options et des réglages qui déterminent le fonctionnement d'un logiciel, d'un matériel ou d'un réseau. La configuration initiale d'un système est une étape critique de l'installation, et la re-configuration est une tâche courante de la maintenance.",
+        image: "https://placehold.co/600x400/D4AC0D/FFFFFF?text=Configuration"
+    },
+    {
+        french: "Maintenance",
+        arabic: "صيانة",
+        category: "Général",
+        explanation: "La **maintenance** est l'ensemble des actions techniques effectuées pour maintenir un système en bon état de fonctionnement. Elle peut être préventive (mises à jour, nettoyage), corrective (réparation de pannes) ou évolutive (ajout de nouvelles fonctionnalités). La maintenance est une tâche essentielle pour garantir la disponibilité et la performance d'une infrastructure.",
+        image: "https://placehold.co/600x400/7E57C2/FFFFFF?text=Maintenance"
+    },
+    {
+        french: "Mise à jour (Update)",
+        arabic: "تحديث",
+        category: "Général",
+        explanation: "Une **mise à jour** est une nouvelle version d'un logiciel qui corrige des bugs, améliore la performance ou ajoute de nouvelles fonctionnalités. Les mises à jour sont essentielles pour garantir la sécurité et la stabilité des systèmes et pour s'adapter aux nouvelles technologies. Elles doivent être appliquées régulièrement dans le cadre de la maintenance.",
+        image: "https://placehold.co/600x400/9B2C2C/FFFFFF?text=Mise+à+jour"
+    },
+    {
+        french: "Dépannage",
+        arabic: "استكشاف الأخطاء وإصلاحها",
+        category: "Général",
+        explanation: "Le **dépannage** est le processus systématique de diagnostic et de résolution des problèmes. Un technicien utilise des outils et des méthodes (comme le modèle OSI) pour identifier la cause d'une panne et la corriger. C'est une compétence fondamentale qui demande de la logique et de la patience.",
+        image: "https://placehold.co/600x400/3142B2/FFFFFF?text=Dépannage"
+    },
+    {
+        french: "Documentation",
+        arabic: "توثيق",
+        category: "Général",
+        explanation: "La **documentation** est l'ensemble des documents écrits qui décrivent le fonctionnement d'un système, les procédures de maintenance, les configurations, etc. Une documentation complète et à jour est cruciale pour le bon fonctionnement d'une infrastructure, car elle permet aux techniciens de comprendre comment le système a été conçu et de résoudre les problèmes plus rapidement.",
+        image: "https://placehold.co/600x400/1E3A8A/FFFFFF?text=Documentation"
+    },
+    {
+        french: "Protocole",
+        arabic: "بروتوكول",
+        category: "Général",
+        explanation: "Un **protocole** est un ensemble de règles et de normes qui régissent la manière dont les différents systèmes ou composants interagissent. Dans le contexte de l'infrastructure digitale, il peut s'agir d'un protocole réseau (comme TCP/IP) ou d'une procédure de travail (comme le protocole de déploiement d'un nouveau serveur). Respecter les protocoles est essentiel pour garantir la compatibilité et la stabilité des systèmes.",
+        image: "https://placehold.co/600x400/60A5FA/FFFFFF?text=Protocole"
+    },
+    {
+        french: "Système de fichiers (File system)",
+        arabic: "نظام الملفات",
+        category: "Systèmes",
+        explanation: "Un **système de fichiers** est la méthode et la structure qu'un système d'exploitation utilise pour organiser et stocker les fichiers sur un périphérique de stockage. Il gère la manière dont les fichiers sont nommés, stockés, retrouvés et mis à jour. Les systèmes de fichiers les plus courants pour Windows sont **NTFS** et **FAT32**, et pour Linux, **ext4** et **XFS**.",
+        image: "https://placehold.co/600x400/38BDF8/FFFFFF?text=Système+de+fichiers"
+    },
+    {
+        french: "FAT32",
+        arabic: "فات 32",
+        category: "Systèmes",
+        explanation: "**FAT32** est un système de fichiers ancien mais très compatible, utilisé principalement pour les clés USB et les cartes mémoire. Il est pris en charge par la plupart des systèmes d'exploitation, mais il a des limitations, notamment sur la taille maximale des fichiers (4 Go) et sur le nombre total de fichiers. Il est moins sécurisé et moins performant que NTFS.",
+        image: "https://placehold.co/600x400/0E7490/FFFFFF?text=FAT32"
+    },
+    {
+        french: "NTFS",
+        arabic: "إن تي إف إس",
+        category: "Systèmes",
+        explanation: "**NTFS (New Technology File System)** est le système de fichiers par défaut de Windows. Il est plus robuste et plus riche en fonctionnalités que FAT32, offrant une meilleure sécurité (permissions), une meilleure gestion de l'espace disque et une plus grande fiabilité. Il est utilisé pour les disques durs internes et est la base de l'administration des serveurs Windows.",
+        image: "https://placehold.co/600x400/3B82F6/FFFFFF?text=NTFS"
+    },
+    {
+        french: "ext4",
+        arabic: "إي إكس تي 4",
+        category: "Systèmes",
+        explanation: "**ext4 (Fourth Extended Filesystem)** est le système de fichiers par défaut dans la plupart des distributions Linux modernes. Il est réputé pour sa performance, sa fiabilité et sa grande capacité. ext4 offre également la journalisation, une fonctionnalité qui permet de restaurer les données après une panne sans avoir à scanner tout le disque.",
+        image: "https://placehold.co/600x400/0F766E/FFFFFF?text=ext4"
+    },
+    {
+        french: "Commande `ls`",
+        arabic: "أمر ls",
+        category: "Systèmes",
+        explanation: "La commande `ls` (list) est une commande de base de la ligne de commande Linux et UNIX. Elle est utilisée pour lister le contenu d'un répertoire. Les options comme `-l` (liste longue, qui montre les permissions et la taille) et `-a` (tous les fichiers, y compris les fichiers cachés) en font un outil indispensable pour l'administration système.",
+        image: "https://placehold.co/600x400/60A5FA/FFFFFF?text=ls"
+    },
+    {
+        french: "Commande `cd`",
+        arabic: "أمر cd",
+        category: "Systèmes",
+        explanation: "La commande `cd` (change directory) est utilisée pour se déplacer entre les répertoires sur la ligne de commande. Elle permet de naviguer dans l'arborescence du système de fichiers. L'utilisation de `cd ..` permet de remonter d'un niveau dans le répertoire, tandis que `cd ~` ramène au répertoire personnel de l'utilisateur.",
+        image: "https://placehold.co/600x400/93C5FD/1E3A8A?text=cd"
+    },
+    {
+        french: "Commande `man`",
+        arabic: "أمر man",
+        category: "Systèmes",
+        explanation: "La commande `man` (manual) est un outil très utile sur les systèmes Linux. Elle affiche la page de manuel d'une commande, ce qui permet d'obtenir des informations détaillées sur son utilisation, ses options et ses exemples. `man` est essentiel pour apprendre à utiliser de nouvelles commandes et pour résoudre les problèmes.",
+        image: "https://placehold.co/600x400/10B981/FFFFFF?text=man"
+    },
+    {
+        french: "Périphérique d'entrée",
+        arabic: "جهاز إدخال",
+        category: "Matériel",
+        explanation: "Un **périphérique d'entrée** est un composant qui permet à un utilisateur d'envoyer des données et des commandes à un ordinateur. Les exemples les plus courants sont le clavier et la souris. D'autres périphériques d'entrée incluent les microphones, les scanners et les webcams. Ils sont le pont entre l'humain et la machine.",
+        image: "https://placehold.co/600x400/F1C40F/FFFFFF?text=Périphérique+d'entrée"
+    },
+    {
+        french: "Périphérique de sortie",
+        arabic: "جهاز إخراج",
+        category: "Matériel",
+        explanation: "Un **périphérique de sortie** est un composant qui permet à un ordinateur d'envoyer des données à un utilisateur. Les exemples les plus courants sont le moniteur (écran), l'imprimante et les haut-parleurs. Les périphériques de sortie convertissent les données numériques en un format compréhensible par l'humain.",
+        image: "https://placehold.co/600x400/E67E22/FFFFFF?text=Périphérique+de+sortie"
+    },
+    {
+        french: "Pilote (Driver)",
+        arabic: "المشغل",
+        category: "Matériel",
+        explanation: "Un **pilote** est un petit logiciel qui permet au système d'exploitation de communiquer avec un périphérique matériel. Chaque périphérique (carte graphique, imprimante, carte réseau) a besoin d'un pilote spécifique pour fonctionner correctement. Installer le bon pilote est une tâche courante et essentielle pour les techniciens.",
+        image: "https://placehold.co/600x400/8E44AD/FFFFFF?text=Pilote"
+    },
+    {
+        french: "Socket CPU",
+        arabic: "مقبس المعالج",
+        category: "Matériel",
+        explanation: "Le **socket CPU** est le connecteur sur la carte mère où le processeur est inséré. Les sockets sont spécifiques au type de processeur qu'ils peuvent accueillir (par exemple, un socket Intel LGA ne peut pas accueillir un processeur AMD AM). Le socket détermine le type de processeur compatible avec la carte mère, une considération cruciale lors de l'assemblage d'un PC.",
+        image: "https://placehold.co/600x400/9B59B6/FFFFFF?text=Socket"
+    },
+    {
+        french: "Barrette de RAM",
+        arabic: "شريحة الذاكرة العشوائية",
+        category: "Matériel",
+        explanation: "Une **barrette de RAM** est un module qui contient des puces de mémoire vive. Ces barrettes sont insérées dans des slots spécifiques sur la carte mère. L'ajout de plus de barrettes de RAM est le moyen le plus simple d'améliorer les performances d'un ordinateur, en particulier pour les applications qui consomment beaucoup de mémoire.",
+        image: "https://placehold.co/600x400/1ABC9C/FFFFFF?text=RAM+Barrette"
+    },
+    {
+        french: "Alimentation (PSU)",
+        arabic: "مزود الطاقة",
+        category: "Matériel",
+        explanation: "Le **bloc d'alimentation (PSU)** est le composant qui fournit l'énergie électrique à tous les autres composants de l'ordinateur. Il convertit le courant alternatif du mur en courant continu utilisable par la carte mère, le processeur, les cartes graphiques et les disques durs. La puissance de l'alimentation, exprimée en watts, doit être suffisante pour tous les composants.",
+        image: "https://placehold.co/600x400/2ECC71/FFFFFF?text=PSU"
+    },
+    {
+        french: "Système de stockage",
+        arabic: "نظام التخزين",
+        category: "Matériel",
+        explanation: "Un **système de stockage** est un composant qui permet de conserver les données de manière permanente, même lorsque l'ordinateur est éteint. Les principaux types de stockage sont les disques durs (HDD) et les disques SSD. Le choix d'un système de stockage est crucial pour la performance et la capacité d'un système.",
+        image: "https://placehold.co/600x400/27AE60/FFFFFF?text=Stockage"
+    },
+    {
+        french: "Sauvegarde",
+        arabic: "نسخ احتياطي",
+        category: "Sécurité Générale",
+        explanation: "La **sauvegarde** est le processus de création de copies de données pour les protéger contre la perte ou la corruption. C'est un principe essentiel de la sécurité, car elle garantit la **disponibilité** des données en cas de panne, de sinistre ou d'attaque. Il existe plusieurs méthodes de sauvegarde : complète, incrémentielle et différentielle.",
+        image: "https://placehold.co/600x400/C0392B/FFFFFF?text=Sauvegarde"
+    },
+    {
+        french: "Journalisation (Logging)",
+        arabic: "تسجيل الأحداث",
+        category: "Sécurité Générale",
+        explanation: "La **journalisation** est le processus d'enregistrement des événements qui se produisent sur un système ou un réseau. Les fichiers journaux (logs) peuvent contenir des informations sur les erreurs, les accès, les actions des utilisateurs, etc. L'analyse des journaux est une étape cruciale pour le diagnostic des pannes et pour la détection des activités malveillantes.",
+        image: "https://placehold.co/600x400/D35400/FFFFFF?text=Journalisation"
+    },
+    {
+        french: "Authentification",
+        arabic: "المصادقة",
+        category: "Sécurité Générale",
+        explanation: "L'**authentification** est le processus de vérification de l'identité d'un utilisateur ou d'un système. Elle répond à la question 'Qui êtes-vous ?'. Les méthodes d'authentification les plus courantes sont le mot de passe (ce que vous savez), la carte d'identité (ce que vous avez) ou l'empreinte digitale (ce que vous êtes). L'authentification est la première ligne de défense de la sécurité.",
+        image: "https://placehold.co/600x400/F1C40F/FFFFFF?text=Authentification"
+    },
+    {
+        french: "Autorisation",
+        arabic: "التفويض",
+        category: "Sécurité Générale",
+        explanation: "L'**autorisation** est le processus de détermination des droits d'accès d'un utilisateur à des ressources après qu'il a été authentifié. Elle répond à la question 'Qu'avez-vous le droit de faire ?'. Par exemple, un utilisateur peut être authentifié sur un système, mais n'avoir l'autorisation que de lire certains fichiers, et pas de les modifier.",
+        image: "https://placehold.co/600x400/F4D03F/1A202C?text=Autorisation"
+    },
+    {
+        french: "Exploit de vulnérabilité",
+        arabic: "استغلال الثغرة",
+        category: "Sécurité Générale",
+        explanation: "Un **exploit** est un programme ou un code qui tire parti d'une vulnérabilité dans un système ou une application. Les attaquants utilisent des exploits pour obtenir un accès non autorisé à un système ou pour causer des dommages. La détection et la correction des vulnérabilités sont les meilleures défenses contre les exploits.",
+        image: "https://placehold.co/600x400/AF7AC5/FFFFFF?text=Exploit"
+    },
+    {
+        french: "Analyse des risques",
+        arabic: "تحليل المخاطر",
+        category: "Sécurité Générale",
+        explanation: "L'**analyse des risques** est le processus d'identification, d'évaluation et de priorisation des risques pour la sécurité d'une infrastructure. Elle permet de déterminer les menaces les plus graves et de mettre en place les mesures de sécurité les plus efficaces pour les atténuer. C'est une étape cruciale de la planification de la sécurité.",
+        image: "https://placehold.co/600x400/5499C7/FFFFFF?text=Analyse+des+risques"
+    },
+    {
+        french: "Plan de continuité d’activité (PCA)",
+        arabic: "خطة استمرارية النشاط",
+        category: "Sécurité Générale",
+        explanation: "Un **plan de continuité d’activité (PCA)** est un ensemble de procédures et de mesures pour garantir que les fonctions essentielles d'une entreprise puissent continuer à fonctionner pendant et après un sinistre majeur (comme une catastrophe naturelle, une panne de courant ou une cyberattaque). Il vise à minimiser l'impact sur les opérations.",
+        image: "https://placehold.co/600x400/85C1E9/1A202C?text=PCA"
+    },
+    {
+        french: "Plan de reprise d’activité (PRA)",
+        arabic: "خطة استئناف النشاط",
+        category: "Sécurité Générale",
+        explanation: "Un **plan de reprise d’activité (PRA)** est un sous-ensemble du PCA qui se concentre sur la récupération des systèmes d'information après une panne ou un sinistre. Le PRA détaille les procédures techniques pour restaurer les données, les applications et les serveurs, et pour ramener le système à un état de fonctionnement normal dans les plus brefs délais.",
+        image: "https://placehold.co/600x400/7D3C98/FFFFFF?text=PRA"
+    }
+            {
+        french: "Monotâche",
+        arabic: "أحادي المهمة",
+        category: "Systèmes d'exploitation",
+        explanation: "Un système d'exploitation **monotâche** est un type de système qui ne peut exécuter qu'un seul programme à la fois. Pour lancer une nouvelle application, il faut d'abord fermer celle qui est en cours d'exécution. Les premiers systèmes comme MS-DOS fonctionnaient sur ce principe, ce qui les rendait simples mais très peu flexibles pour les utilisateurs modernes qui ont besoin de multitâche.",
+        image: "https://placehold.co/600x400/D4AC0D/FFFFFF?text=Monotâche"
+    },
+    {
+        french: "Multitâche",
+        arabic: "متعدد المهام",
+        category: "Systèmes d'exploitation",
+        explanation: "Un système d'exploitation **multitâche** est capable d'exécuter plusieurs programmes simultanément en alternant rapidement entre eux. Le processeur alloue une petite tranche de temps à chaque application, créant l'illusion qu'elles s'exécutent toutes en même temps. Les systèmes d'exploitation modernes comme Windows, macOS et Linux sont tous multitâches, ce qui est essentiel pour la productivité et l'expérience utilisateur.",
+        image: "https://placehold.co/600x400/94A3B8/FFFFFF?text=Multitâche"
+    },
+    {
+        french: "Multiprocesseur",
+        arabic: "متعدد المعالجات",
+        category: "Systèmes d'exploitation",
+        explanation: "Un système **multiprocesseur** est un système d'exploitation capable de gérer plusieurs processeurs physiques ou cœurs de processeur. Il distribue les tâches entre les différents processeurs pour améliorer les performances globales. Le système d'exploitation doit être conçu spécifiquement pour le multiprocesseur afin de tirer pleinement parti du matériel et d'éviter les conflits d'accès aux ressources partagées.",
+        image: "https://placehold.co/600x400/9B59B6/FFFFFF?text=Multiprocesseur"
+    },
+    {
+        french: "Interruption",
+        arabic: "مقاطعة",
+        category: "Systèmes d'exploitation",
+        explanation: "Une **interruption** est un signal envoyé au processeur pour lui indiquer qu'un événement a besoin de son attention. Les interruptions peuvent provenir du matériel (par exemple, un clavier) ou du logiciel. Le processeur suspend alors sa tâche actuelle pour traiter l'interruption, ce qui est essentiel pour que le système d'exploitation puisse répondre en temps réel aux événements extérieurs et aux demandes des programmes.",
+        image: "https://placehold.co/600x400/2980B9/FFFFFF?text=Interruption"
+    },
+    {
+        french: "Pile d'appels (Call Stack)",
+        arabic: "مكدس الاستدعاءات",
+        category: "Systèmes d'exploitation",
+        explanation: "La **pile d'appels** est une structure de données qui gère les appels de fonctions d'un programme. Chaque fois qu'une fonction est appelée, ses informations sont stockées au sommet de la pile. Lorsque la fonction se termine, elle est retirée. La pile d'appels est cruciale pour suivre l'ordre d'exécution des fonctions et pour la gestion de la mémoire. Une erreur de dépassement de pile (stack overflow) se produit lorsque la pile est pleine.",
+        image: "https://placehold.co/600x400/38BDF8/FFFFFF?text=Pile+d'appels"
+    },
+    {
+        french: "Gestion de la mémoire",
+        arabic: "إدارة الذاكرة",
+        category: "Systèmes d'exploitation",
+        explanation: "La **gestion de la mémoire** est l'une des fonctions les plus importantes d'un système d'exploitation. Elle consiste à allouer de la mémoire aux programmes en cours d'exécution, à suivre l'utilisation de la mémoire et à la libérer lorsque les programmes ont terminé. Une bonne gestion de la mémoire est essentielle pour éviter les fuites de mémoire et pour garantir la performance et la stabilité du système.",
+        image: "https://placehold.co/600x400/1E3A8A/FFFFFF?text=Gestion+de+la+mémoire"
+    },
+    {
+        french: "Mémoire virtuelle",
+        arabic: "الذاكرة الافتراضية",
+        category: "Systèmes d'exploitation",
+        explanation: "La **mémoire virtuelle** est une technique qui permet au système d'exploitation d'utiliser une partie du disque dur comme s'il s'agissait de mémoire vive (RAM). Lorsque la RAM est pleine, le système déplace les données des programmes moins utilisés vers le disque. Cela permet au système d'exécuter des programmes plus grands que la RAM disponible, mais cela se fait au détriment de la performance car les disques durs sont beaucoup plus lents que la RAM.",
+        image: "https://placehold.co/600x400/10B981/FFFFFF?text=Mémoire+virtuelle"
+    },
+    {
+        french: "Partition de swap",
+        arabic: "قسم المبادلة",
+        category: "Systèmes d'exploitation",
+        explanation: "Une **partition de swap** (ou fichier de pagination) est l'espace sur le disque dur utilisé pour implémenter la mémoire virtuelle sur les systèmes Linux. Le système d'exploitation y déplace des blocs de données (pages) de la mémoire vive pour libérer de l'espace pour d'autres processus. Une partition de swap de taille suffisante est essentielle sur les systèmes qui ne disposent pas de beaucoup de RAM.",
+        image: "https://placehold.co/600x400/3498DB/FFFFFF?text=Partition+de+swap"
+    },
+    {
+        french: "Gestion des processus",
+        arabic: "إدارة العمليات",
+        category: "Systèmes d'exploitation",
+        explanation: "La **gestion des processus** est l'une des fonctions principales du noyau d'un système d'exploitation. Elle inclut la création, la planification, la synchronisation et la terminaison des processus. Le système d'exploitation alloue du temps CPU et d'autres ressources à chaque processus pour garantir une exécution efficace et pour éviter que des processus ne se bloquent entre eux.",
+        image: "https://placehold.co/600x400/60A5FA/FFFFFF?text=Gestion+des+processus"
+    },
+    {
+        french: "Thread (Fil d'exécution)",
+        arabic: "خيط التنفيذ",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **thread** est un flux d'exécution au sein d'un processus. Un processus peut avoir plusieurs threads qui s'exécutent en même temps et partagent les mêmes ressources (mémoire, fichiers ouverts). Le multithreading permet à une application de réaliser plusieurs tâches en parallèle, comme télécharger un fichier tout en affichant l'interface utilisateur. Un thread est plus léger qu'un processus et sa création demande moins de ressources.",
+        image: "https://placehold.co/600x400/0F766E/FFFFFF?text=Thread"
+    },
+    {
+        french: "Planificateur de tâches",
+        arabic: "مجدول المهام",
+        category: "Systèmes d'exploitation",
+        explanation: "Le **planificateur de tâches** (scheduler) est un composant du système d'exploitation qui décide quel processus ou thread doit s'exécuter à un moment donné. Il utilise différents algorithmes pour allouer du temps CPU aux processus de manière juste et efficace, en tenant compte de leur priorité et de leur type (par exemple, les processus interactifs ont une priorité plus élevée que les processus en arrière-plan).",
+        image: "https://placehold.co/600x400/9B2C2C/FFFFFF?text=Planificateur+de+tâches"
+    },
+    {
+        french: "Système embarqué",
+        arabic: "نظام مدمج",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **système embarqué** est un système informatique spécialisé, conçu pour exécuter une tâche spécifique, souvent en temps réel. Il est généralement intégré dans un autre appareil, comme une voiture, un appareil électroménager ou une montre intelligente. Les systèmes d'exploitation embarqués sont souvent plus simples et plus compacts que les OS pour ordinateurs personnels, car ils doivent fonctionner avec des ressources limitées.",
+        image: "https://placehold.co/600x400/E53E3E/FFFFFF?text=Système+embarqué"
+    },
+    {
+        french: "Noyau (Kernel)",
+        arabic: "النواة",
+        category: "Systèmes d'exploitation",
+        explanation: "Le **noyau** est le cœur de tout système d'exploitation. Il est la couche de logiciel qui se situe directement entre le matériel et les applications. Le noyau gère les ressources système, comme le processeur, la mémoire et le stockage, et permet aux programmes d'y accéder. Il est le composant le plus important, car une défaillance du noyau entraîne le plantage de l'ensemble du système.  ",
+        image: "https://placehold.co/600x400/B03A2E/FFFFFF?text=Noyau"
+    },
+    {
+        french: "Shell",
+        arabic: "شيل",
+        category: "Systèmes d'exploitation",
+        explanation: "Le **shell** est l'interface utilisateur d'un système d'exploitation. C'est l'outil qui permet à l'utilisateur d'interagir avec le noyau et d'exécuter des commandes. On distingue les shells en ligne de commande (comme Bash sur Linux et PowerShell sur Windows) et les shells graphiques (comme le bureau de Windows et l'interface de GNOME sur Linux).",
+        image: "https://placehold.co/600x400/77AADD/FFFFFF?text=Shell"
+    },
+    {
+        french: "Environnement de bureau (Desktop Environment)",
+        arabic: "بيئة سطح المكتب",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **environnement de bureau** est un ensemble de programmes qui fournit une interface graphique utilisateur (GUI) sur un système d'exploitation. Il comprend le bureau, le gestionnaire de fenêtres, les icônes, les menus et les barres des tâches. Les environnements de bureau les plus connus sont Windows Desktop, GNOME, KDE et macOS Aqua.",
+        image: "https://placehold.co/600x400/5DADE2/FFFFFF?text=Environnement+de+bureau"
+    },
+    {
+        french: "Système de fichiers journalisé",
+        arabic: "نظام الملفات الموثق",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **système de fichiers journalisé** est un système de fichiers qui utilise un journal (journal) pour enregistrer les opérations avant qu'elles ne soient écrites sur le disque. Si le système subit une panne de courant ou un crash, le journal permet de récupérer le système de fichiers dans un état cohérent, évitant ainsi la perte de données. C'est un élément clé de la fiabilité des systèmes de fichiers modernes comme NTFS et ext4.",
+        image: "https://placehold.co/600x400/34495E/FFFFFF?text=Système+journalisé"
+    },
+    {
+        french: "Processus orphelin",
+        arabic: "العملية اليتيمة",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **processus orphelin** est un processus dont le processus parent (celui qui l'a lancé) s'est terminé. Il est alors adopté par un processus parent 'spécial' (souvent le processus `init` ou `systemd`) et continue à s'exécuter jusqu'à ce qu'il se termine. S'il n'est pas géré correctement, un grand nombre de processus orphelins peut consommer des ressources et affecter la stabilité du système.",
+        image: "https://placehold.co/600x400/7F8C8D/FFFFFF?text=Orphelin"
+    },
+    {
+        french: "Processus Daemon (Service)",
+        arabic: "عملية ديمون",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **processus Daemon** est un service qui s'exécute en arrière-plan sur un système d'exploitation, sans être sous le contrôle direct d'un utilisateur. Les daemons fournissent des fonctionnalités essentielles, comme l'impression, la gestion des connexions réseau ou la gestion de la base de données. Ils sont généralement lancés au démarrage du système et se terminent à l'arrêt.",
+        image: "https://placehold.co/600x400/BDC3C7/2C3E50?text=Daemon"
+    },
+    {
+        french: "Système de fichiers distribué",
+        arabic: "نظام الملفات الموزع",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **système de fichiers distribué** est un système de fichiers dont les données sont stockées sur plusieurs serveurs de la même manière que si elles étaient sur un seul disque dur. Les utilisateurs peuvent y accéder comme s'il s'agissait d'un système de fichiers local. C'est une technologie clé pour la création de stockages de grande capacité et hautement disponibles, comme ceux utilisés dans les centres de données.",
+        image: "https://placehold.co/600x400/A9CCE3/1A202C?text=Système+distribué"
+    },
+    {
+        french: "RAID",
+        arabic: "رايد",
+        category: "Systèmes d'exploitation",
+        explanation: "Le **RAID (Redundant Array of Independent Disks)** est une technologie qui combine plusieurs disques durs en une seule unité logique. Il existe différents niveaux de RAID, chacun ayant des objectifs différents. Certains niveaux de RAID améliorent la performance (RAID 0), d'autres offrent une meilleure tolérance aux pannes (RAID 1 et RAID 5) en dupliquant les données, ce qui est essentiel pour la sécurité et la disponibilité des données.",
+        image: "https://placehold.co/600x400/4CAF50/FFFFFF?text=RAID"
+    },
+    {
+        french: "Gestionnaire de paquets",
+        arabic: "مدير الحزم",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **gestionnaire de paquets** est un outil qui automatise l'installation, la mise à jour, la configuration et la suppression de logiciels sur un système d'exploitation. Il gère les dépendances entre les logiciels et simplifie la maintenance. Sur Linux, les gestionnaires de paquets les plus courants sont `apt` (pour Debian/Ubuntu), `yum` (pour Red Hat) et `pacman` (pour Arch Linux).",
+        image: "https://placehold.co/600x400/38A169/FFFFFF?text=Gestionnaire+de+paquets"
+    },
+    {
+        french: "Environnement d'exécution (Runtime Environment)",
+        arabic: "بيئة التنفيذ",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **environnement d'exécution** est l'ensemble des logiciels et des bibliothèques nécessaires à l'exécution d'un programme. Il peut inclure une machine virtuelle (comme la JVM pour Java), un interpréteur (comme Node.js pour JavaScript) ou des bibliothèques. L'environnement d'exécution est crucial pour garantir que le code d'une application est compatible avec le système d'exploitation.",
+        image: "https://placehold.co/600x400/778CA3/FFFFFF?text=Environnement+d'exécution"
+    },
+    {
+        french: "Système temps réel",
+        arabic: "نظام الوقت الحقيقي",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **système temps réel** est un système d'exploitation conçu pour garantir que les tâches sont exécutées dans un délai strict et prévisible. Il est utilisé dans les applications où un retard, même infime, peut avoir des conséquences graves, comme dans les systèmes de contrôle industriels, les équipements médicaux et les systèmes de freinage des voitures. La réactivité est sa principale caractéristique.",
+        image: "https://placehold.co/600x400/F97316/FFFFFF?text=Système+temps+réel"
+    },
+    {
+        french: "HyperThreading",
+        arabic: "الخيوط الفائقة",
+        category: "Systèmes d'exploitation",
+        explanation: "L'**HyperThreading** est une technologie d'Intel qui permet à un seul cœur de processeur de se comporter comme deux cœurs logiques. Cela permet au système d'exploitation de mieux utiliser les ressources du processeur et de traiter plus de threads simultanément, ce qui se traduit par une meilleure performance pour les applications multithreadées. Cette technologie est cruciale pour le multitâche sur les processeurs modernes.",
+        image: "https://placehold.co/600x400/A855F7/FFFFFF?text=HyperThreading"
+    },
+    {
+        french: "Système de fichiers compressé",
+        arabic: "نظام الملفات المضغوط",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **système de fichiers compressé** est un système qui compresse automatiquement les fichiers au fur et à mesure qu'ils sont écrits sur le disque dur. Cela permet d'économiser de l'espace de stockage, mais peut réduire la performance car le système doit compresser et décompresser les fichiers. Certains systèmes de fichiers, comme NTFS, supportent la compression nativement.",
+        image: "https://placehold.co/600x400/5B21B6/FFFFFF?text=Système+compressé"
+    },
+    {
+        french: "Système de fichiers chiffré",
+        arabic: "نظام الملفات المشفر",
+        category: "Systèmes d'exploitation",
+        explanation: "Un **système de fichiers chiffré** est un système de fichiers qui chiffre automatiquement les données des fichiers à mesure qu'elles sont écrites sur le disque. Cela garantit la confidentialité des données, même si le disque est volé. Le système d'exploitation gère le chiffrement et le déchiffrement de manière transparente pour l'utilisateur, et l'accès aux données est contrôlé par une clé ou un mot de passe. C'est une fonctionnalité essentielle pour la sécurité.",
+        image: "https://placehold.co/600x400/7C3AED/FFFFFF?text=Système+chiffré"
+    }
         ];
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -458,3 +1291,4 @@
     </script>
 </body>
 </html>
+
